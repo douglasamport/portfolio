@@ -11,36 +11,69 @@
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 
 <style>
-.body, .html {
-  border: 0;
-  margin: 0;
-  box-sizing: border-box; 
+html, body {
+  border: 0px;
+  margin: 0px; 
 }
 
-.full-container {
-  width: 100vw;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
-  align-content: center;
+* {
+  box-sizing: border-box;
 }
+
+.full-flex-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .flex-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 .pattern{
    background:url(
 data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAP0lEQVQoU2NkwAS+DAwMm9GFGdEEYIowFCMrRJdE4cMUYrWOgYEBLg5SiEsRzFVgeXQ3YvEbWMiXWIUMRCsEAKdACVYLfF7RAAAAAElFTkSuQmCC
    ) repeat;
 }
+
+.flex-wrap {
+  display: inline-block;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.shadow {
+  box-shadow:
+  0 37.8px 4.5px -7px rgba(0, 0, 0, 0.012),
+  0 47.6px 10.6px -7px rgba(0, 0, 0, 0.022),
+  0 52.6px 19px -7px rgba(0, 0, 0, 0.029),
+  0 56.5px 31.5px -7px rgba(0, 0, 0, 0.036),
+  0 61.2px 51.8px -7px rgba(0, 0, 0, 0.044),
+  0 70px 90.6px -7px rgba(0, 0, 0, 0.056),
+  0 100px 196px -7px rgba(0, 0, 0, 0.07)
+}
+
 .center {
-  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
   height: 10vh;
+  width: auto;
   background-color: dodgerblue;
   line-height: 10vh;
 }
   
 .msg {
-  
-  margin: auto;
-  vertical-align: middle;
+  font-size: 3rem;
+  font-weight: 800;
+  font-family: monospace;
 }
   
 </style>
@@ -49,11 +82,13 @@ data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAP0lEQVQoU2
 
 <body>
 
-<div id="main" class="full-container pattern">
-  
-    <div class="center">
+<div id="main" class="full-flex-container pattern">
+  <div class="flex-wrap" id="center-flex-wrapper">
+    <div class="center circle shadow">
       <p class="msg">Hello World <p>
     </div>
+  </div>
+    
 </div>
   <script src="js/scripts.js"></script>
 </body>
