@@ -3,16 +3,16 @@ import Link from 'next/link';
 
 function NavBar() {
     return <nav className="navBar">
-        <div className="container">
+        <div className="containerFull">
             <Link href="/">
-                <a className="title">Home</a>
+                <a className="title">logo</a>
             </Link>
             <ul>
-                <Link href="/posts">
-                <a>All Posts</a>
-                </Link>
                 <Link href="/projects">
-                    <a>Projects</a> 
+                <a>Work</a>
+                </Link>
+                <Link href="/posts">
+                    <a>Writing</a> 
                 </Link>
             </ul>
         </div>

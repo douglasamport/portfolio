@@ -1,14 +1,13 @@
 import axios from 'axios';
 import React from 'react';
-import HomeHeader from '../components/HomeHeader';
+import Landing from '../components/Landing';
 import HomeLatestPosts from '../components/HomeLatestPosts';
 
 function Home({posts, homeHeader}) {
-  console.log("testfor posts data", posts.data[0].attributes.title)
-  console.log("testfor header data", homeHeader.data.attributes.header)
+
   return (
     <>
-      <HomeHeader homeHeader={homeHeader.data.attributes}/>
+      <Landing homeHeader={homeHeader.data.attributes}/>
       <HomeLatestPosts posts={posts.data}/>
     </>
    

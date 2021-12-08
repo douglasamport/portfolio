@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <NavBar />
-    <div className="container">
+    <div className="">
       <Component {...pageProps} />
     </div>
     </>

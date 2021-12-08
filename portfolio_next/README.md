@@ -1,3 +1,18 @@
+TODO: 
+add animation to nav bar.
+build Progect Preview Component
+Build Work Component
+Build Work Page
+Add W0rk Component to index
+Link Nav Links to Component pages
+Build individual work example pages like blog pages
+
+Fix Layout writing section
+Fix styling for Tablet and mobile 
+
+Build Footer Component add footer component to Appjs
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
